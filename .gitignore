@@ -2,3 +2,5 @@
 /static/
 /responses/
 /data/
+/embeddings.txt.wv.vectors_ngrams.npy
+/embeddings.txt.trainables.vectors_ngrams_lockf.npy
