@@ -44,7 +44,7 @@ def find_correct_spelling(model: FastText, incorrect_word: str, num_neighbours: 
                           max_edit_distance: int) -> Dict[str, str]:
     """Find correct spelling for a given word which is incorrectly spelled"""
 
-    result, message = '', ''
+    correct_word, message = '', ''
 
     mixed_vocab_set = set()
     for word, freq in mixed_vocab_counter.most_common():
@@ -59,17 +59,17 @@ def find_correct_spelling(model: FastText, incorrect_word: str, num_neighbours: 
 
         for candidate in candidates:
             if candidate in clean_vocab_counter and edit_distance(incorrect_word, candidate) <= max_edit_distance:
-                result = candidate
+                correct_word = candidate
                 break
 
-        if result != '':
+        if correct_word != '':
             for candidate in candidates:
                 if candidate in mixed_vocab_set and edit_distance(incorrect_word, candidate) <= max_edit_distance:
-                    result = candidate
+                    correct_word = candidate
                     break
-        if result == '':
+        if correct_word == '':
             message = 'Correct spelling not found'
-    return {'result': result, 'message': message}
+    return {'incorrect_word': incorrect_word, 'correct_word': correct_word, 'message': message}
 
 
 if __name__ == "__main__":

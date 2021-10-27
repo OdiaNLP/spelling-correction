@@ -1,0 +1,19 @@
+<form method=post action="">
+    <h2>Spelling correction of Odia word</h2>
+    <p>Enter a Odia word and then click on submit button. You may leave the other values to default values.</p>
+    <table>
+        {% for field in form %}
+        <tr>
+            <td>{{ field.label }}</td>
+            <td>{{ field }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><input type=submit value=Submit></form></p>
+
+<p>
+    {% if result != None %}
+<p style="color:red;"> {{ result.message }} </p>
+<p> {{ result.result_str }} </p>
+{% endif %}
+</p>
