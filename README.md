@@ -9,4 +9,4 @@ The code has been tested with Python 3.6.
 ## TODO
 - [ ] SCREENSHOT
 - [ ] UPDATE README
-- [ ] ADD REQUIREMENTS.TXT
+- [x] ADD REQUIREMENTS.TXT
