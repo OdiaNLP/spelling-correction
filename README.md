@@ -29,7 +29,7 @@ Put that inside `data` directory.
 
 ```shell
 # web app
-python controller.py  # open http://127.0.0.1:31137/word2vec in browser
+python controller.py  # open http://127.0.0.1:31137/spelling in browser
 ```
 
 ## Snapshot of web app
