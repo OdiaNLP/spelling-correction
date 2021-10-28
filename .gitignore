@@ -5,3 +5,4 @@
 /embeddings.txt.trainables.vectors_ngrams_lockf.npy
 /clean_vocab_counter.json
 /mixed_vocab_counter.json
+/snapshot.png
