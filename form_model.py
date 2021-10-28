@@ -8,4 +8,4 @@ class InputForm(Form):
     mixed_vocab_min_freq = IntegerField(label='Minimum frequency of a word from mixed vocab to be considered valid',
                                         default=50, validators=[validators.InputRequired()])
     max_edit_distance = IntegerField(label='Maximum edit distance between incorrectly and correctly spelled words',
-                                     default=10, validators=[validators.InputRequired()])
+                                     default=2, validators=[validators.InputRequired()])
