@@ -62,7 +62,7 @@ def find_correct_spelling(model: FastText, incorrect_word: str, num_neighbours: 
                 correct_word = candidate
                 break
 
-        if correct_word != '':
+        if correct_word == '':
             for candidate in candidates:
                 if candidate in mixed_vocab_set and edit_distance(incorrect_word, candidate) <= max_edit_distance:
                     correct_word = candidate
