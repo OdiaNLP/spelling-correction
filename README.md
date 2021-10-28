@@ -8,7 +8,7 @@ The code has been tested with Python 3.6.
 
 ## Overview
 
-We use Fasttext for correcting spelling mistakes. Check out [this](https://fasttext.cc/) to get a guide 📙 to Fasttext.
+We use Fasttext for correcting spelling mistakes. Check out [this](https://fasttext.cc/) to get a guide 📘 to Fasttext.
 
 - First download Odia text data with mixed vocabulary.
 
